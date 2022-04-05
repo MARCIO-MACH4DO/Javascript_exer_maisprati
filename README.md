@@ -1,4 +1,4 @@
-# Javascript_exer_maisprati
+# Javascript_exercicios_maisprati
 
 Pastas contidas no repositório:
 
