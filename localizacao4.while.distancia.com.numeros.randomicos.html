@@ -1,0 +1,20 @@
+<!--configuração de charset-->  
+        <meta charset="utf-8">
+<script>
+var x1 = Math.floor(Math.random()*10);
+var y1 = Math.floor(Math.random()*10);
+
+var x2 = 1;
+var y2;
+var distancia = 100;
+while (distancia > 1)
+{
+  x2 = prompt("entre com o valor de x");
+  y2 = prompt("entre com o valor de y");
+  distancia = Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
+  alert("A distância ficou em " + distancia)
+}
+
+alert("Márcio você chegou no alvo");
+
+</script>

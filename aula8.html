@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta
+<html>
+	<head>
+		<!--configuração de charset-->  
+        <meta charset="utf-8">
+	  <script>
+			function calculoIMC() {
+				var peso = document.getElementById("peso").value;
+				var altura = document.getElementById("altura").value;
+				var selecao = document.getElementById("selecao").value;
+
+				var imc = peso / (altura * altura);
+
+				var classificacao = "";
+
+				if (imc < 18.5) {classificacao = "Abaixo do peso";}
+				else if (imc <= 24.9) {classificacao = "Peso normal";}	
+				else if (imc <= 29.9) {classificacao = "Sobrepeso";}
+				else if (imc <= 34.9) {classificacao = "Obesidade grau I";}
+				else if (imc <= 39.9) {classificacao = "Obesidade grau II";}
+				else {classificacao = "Obesidade grau III ou Mórbida";}
+
+				var elementoResultado = document.getElementById("resultado");
+
+				if (selecao == "1") {
+				elementoResultado.innerHTML = "IMC:" + imc;}
+				else if (selecao == "2") {
+				elementoResultado.innerHTML = "Classificação:" + classificacao ;}
+				else {
+				elementoResultado.innerHTML = "IMC:" + imc + "<br>Classificação:" + classificacao ;}
+			}
+		</script>
+    </head>
+	<body
+		<form>
+			Peso (em kg)
+			<br>
+			<input name="peso" id="peso">
+			<br><br>
+			Altura (em metros)
+			<br>
+			<input name="altura" id="altura">
+			<br><br>
+			<select name="selecao" id="selecao">
+				<option value="1">Valor IMC</option>
+				<option value="2">Classificação</option>
+				<option value="3">Valor e Classificação</option>
+			</select>
+			<br><br>
+			<input type="button" value="Enviar" onclick="calculoIMC()">
+	    </form>
+	    	<p>Resultado:
+	    	   <p id="resultado"></p>
+    </body>	
+
+
+</html>

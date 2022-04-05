@@ -1,0 +1,15 @@
+<!--configuração de charset-->
+<meta charset="utf-8">
+ <script>
+var peso = prompt("Entre com o peso em kg");
+var altura = prompt("Entre com a altura em m");
+var imc = peso / (altura * altura);
+alert("O IMC é " + imc);
+
+if (imc < 18.5) alert("Abaixo do peso");
+else if (imc <= 24.9) alert("Peso normal");
+else if (imc <= 29.9) alert("Sobrepeso");
+else if (imc <= 34.9) alert("Obesidade grau 1");
+else if (imc <= 39.9) alert("Obesidade grau 2");
+else alert("Obsidade grau 3");
+</script>

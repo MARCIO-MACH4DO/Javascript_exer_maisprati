@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+	function principal() {
+		var msg = prompt("digite sua mensagem");		
+		var elemento = document.getElementById("mensagem");
+		elemento.innerHTML = msg;
+}
+</script>
+</head>
+
+<body>
+	<p onmouseover="principal()">mover o mouse para cá</p>
+	<p onclick="principal()">clicar aqui</p>
+	<p id=mensagem></p>
+</body>
+</html>

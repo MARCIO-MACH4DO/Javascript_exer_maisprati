@@ -1,0 +1,31 @@
+<!--configuração de charset-->  
+        <meta charset="utf-8">
+<script>
+var x1 = Math.floor(Math.random()*10);
+var y1 = Math.floor(Math.random()*10);
+
+var x2 = 1;
+var y2;
+var distancia = 0;
+var contador = 1;
+do
+{
+  x2 = prompt("entre com o valor de x");
+  y2 = prompt("entre com o valor de y");
+  distancia = Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
+  alert("Esta é a tentativa " + contador);
+  alert("A distância ficou em " + distancia);
+  contador++;
+} while ((distancia > 1) && (contador < 10))
+if (distancia <= 1)
+{
+  alert("Márcio você chegou no alvo");
+}
+else
+{
+  alert("Márcio você não chegou no alvo");
+}
+/*
+contador = contador + 1; é igual contador++;
+*/
+</script>

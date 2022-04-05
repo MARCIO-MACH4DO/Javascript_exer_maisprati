@@ -1,0 +1,29 @@
+<!--configuração de charset-->
+<meta charset="utf-8">
+<script>
+var operacao = prompt("entre com a operação (+ , - , * , /)");
+var numero1 = parseInt(prompt("entre com o primeiro número"));
+var numero2 = parseInt(prompt("entre com o segundo número"));
+var resultado;
+
+switch(operacao)
+{
+     case "+":
+         resultado = numero1 + numero2;
+         break;
+     case "-":
+         resultado = numero1 - numero2;
+         break;
+      case "*":
+         resultado = numero1 * numero2;
+         break;
+      case "/":
+         resultado = numero1 / numero2;	
+         break;
+      default:
+         resultado = " entrada de operação inválida";
+}
+
+alert("O resultado é: " + resultado);
+
+</script>
